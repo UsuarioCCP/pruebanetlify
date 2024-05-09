@@ -1,0 +1,29 @@
+#camarito {
+    position: fixed;
+      width: 140px;
+      bottom: 10px;
+    }
+    .banner-container {
+    /* background: linear-gradient(0deg, #b71731 0%, #df1949 100%); */
+    background: linear-gradient(180deg, #777777, #666666, #555555, #444444, #333333, #222222, #111111, #000000e7);
+    position: fixed;
+    height: 5rem;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    }
+    .mensajes {
+    font-size: 4rem;
+    padding: 0;
+    white-space: nowrap;
+    color: white;
+    }
+    .message-text {
+    font-family: 'Bree Serif', serif;
+    font-family: 'Maitree', serif;
+    margin: 0;
+    }

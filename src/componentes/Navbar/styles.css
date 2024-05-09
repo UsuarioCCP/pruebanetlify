@@ -1,0 +1,35 @@
+#contenedor-logos {
+	display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 60px;
+    align-items: center;
+    align-content: center;
+}
+#contenedor-nombre {
+    display: grid;
+    align-items: end;
+    align-content: stretch;
+    justify-items: center;
+    margin: 0px 60px 0 60px;
+}
+.empresa{
+	color: white;
+	background: rgb(238,34,34);
+	background: linear-gradient(0deg, rgba(238,34,34,1) 41%, rgba(200,42,42,1) 64%, rgba(181,88,88,1) 95%);
+	font-family: 'Rokkitt', serif;
+	font-weight: bold;
+	font-size: 45px;
+	border-radius: 95px 95px 95px 95px;
+	border: 8px solid #f9edc66f;
+	padding: 5px 15px 5px 10px;
+	margin: 0;
+}
+#logo-empresa-ochenta {
+	width: 150px;
+}
+
+#logo-empresa {
+    width: 100px;
+	margin-left: -5px;
+}
