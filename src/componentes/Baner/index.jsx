@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
 import './styles.css'
 
@@ -22,15 +22,18 @@ function Baner() {
     "Recuerda que puedes realizar tu matrícula mercantil mediante la Ventanilla Unica Empresarial VUE, aplica solo para Pamplona."
   ];
 
+  const mensajeElementRef = useRef(null);
+
   useEffect(() => {
-    const mensajeElement = document.querySelector(".message-text");
-    const footerContainer = document.querySelector(".mensajes");
-    const mensajeWidth = mensajeElement.offsetWidth;
-    const containerWidth = footerContainer.offsetWidth;
+    const mensajeElement = mensajeElementRef.current;
+    if (!mensajeElement) return;
 
     const updateMessage = () => {
       const message = messages[currentMessageIndex];
       setCurrentMessage(message);
+
+      const mensajeWidth = mensajeElement.offsetWidth;
+      const containerWidth = mensajeElement.parentNode.offsetWidth;
 
       gsap.set(mensajeElement, { x: containerWidth + mensajeWidth });
       gsap.to(mensajeElement, {
@@ -44,7 +47,7 @@ function Baner() {
     };
 
     updateMessage();
-  }, [currentMessageIndex]);
+  }, [currentMessageIndex, messages]);
 
   return (
     <footer className="container-fluid">
@@ -57,11 +60,13 @@ function Baner() {
           />
         </div>
         <div className="col-md-11 mensajes">
-          <p className="message-text">{currentMessage}</p>
+          <p className="message-text" ref={mensajeElementRef}>
+            {currentMessage}
+          </p>
         </div>
       </div>
     </footer>
   );
 }
 
-export default Baner;
+export default Baner
