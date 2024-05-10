@@ -7,9 +7,9 @@ export const ImagenesContext = createContext();
 export const ImagenesProvider = ({ children }) => {
   // Estado para almacenar las imágenes, inicializado con imágenes predeterminadas
   const [imagenes, setImagenes] = useState([
-    { url: "imagen1.jpg", titulo: "Imagen 1", descripcion: "Descripción 1" },
-    { url: "imagen2.jpg", titulo: "Imagen 2", descripcion: "Descripción 2" },
-    { url: "imagen3.jpg", titulo: "Imagen 3", descripcion: "Descripción 3" },
+    { url: "https://i.postimg.cc/kgBDFXGD/441533923-462431496158834-9023948063994655330-n.jpg", titulo: "#todoenlaVUE", descripcion: "Haz tu vida más fácil y regístrate en El Guro Emprendedor, el portal gratuito para emprendedores y microempresarios." },
+    { url: "https://i.postimg.cc/76myW0Q4/438302983-461813379553979-4329611901029718256-n.jpg", titulo: "Feliz Aniversario", descripcion: "Gracias por apoyar a todos los empresarios y emprendedores del sector de la artesanía y a los artistitas de nuestra región en #ElPaisDeLaBelleza " },
+    { url: "https://i.postimg.cc/QtwVy2zh/438301725-7824147357607441-918737923866674437-n.jpg", titulo: "VUE Pamplona", descripcion: "¡Transforma tus sueños empresariales en realidad en tiempo récord con la VUE! 🚀✨¡Tan fácil como suena! 🕒 Ingresa a www.vue.gov.co " },
   ]);
 
   // Cargar imágenes desde localStorage al iniciar
