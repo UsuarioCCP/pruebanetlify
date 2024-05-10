@@ -1,0 +1,5 @@
+#contenido-tabla{
+    background: white;
+    width: calc(100rem - 20rem);
+    left: 16rem;
+}

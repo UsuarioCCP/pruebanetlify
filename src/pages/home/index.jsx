@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import Layout from "../../componentes/Layout"
 import VideoVisor from "../../componentes/VideoVisor"
+import Carousel from "../../componentes/Carousel";
+import Baner from "../../componentes/Baner";
 
 const Home = () => {
 
@@ -24,9 +26,10 @@ const Home = () => {
                     <VideoVisor videoUrl={videoUrl} />
                 </div>
                 <div className="col-span-3 lg:col-span-1 carousel flex justify-center items-center">
-                    {/* <Carousel /> */}
+                    <Carousel />
                 </div>
             </div>
+            <Baner />
         </Layout>
     )
 }
