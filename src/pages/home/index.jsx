@@ -22,7 +22,7 @@ const Home = () => {
     return (
         <Layout>
             <div className='grid grid-cols-3'>
-                <div className="h-lvh col-span-3 lg:col-span-2 flex items-center justify-center flex-wrap">
+                <div className="max-h-max col-span-3 lg:col-span-2 flex items-center justify-center flex-wrap">
                     <VideoVisor videoUrl={videoUrl} />
                 </div>
                 <div className="col-span-3 lg:col-span-1 carousel flex justify-center items-center">
