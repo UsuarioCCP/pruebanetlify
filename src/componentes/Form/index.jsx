@@ -47,7 +47,7 @@ const Form = () => {
         </svg>
       </button>
 
-      <aside className="fixed mt-35 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 border-8 border-gray-200 border-solid rounded-lg dark:border-gray-700" aria-label="Sidebar">
+      <aside className="fixed mt-35 left-0 z-40 w-64 h-[39rem] transition-transform -translate-x-full sm:translate-x-0 border-8 border-red-700 border-solid rounded-lg dark:border-gray-700" aria-label="Sidebar">
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <ul className="space-y-2 font-medium">
             <li>
@@ -70,10 +70,10 @@ const Form = () => {
         </div>
       </aside>
 
-      <div className="container h-full fixed top-28 overflow-x-auto bg-white border-8 border-gray-200 border-solid rounded-lg dark:border-gray-700" id="contenido-tabla">
+      <div className="container h-[39rem] fixed top-28 overflow-x-auto bg-white border-8 border-red-700 border-solid rounded-lg dark:border-gray-700" id="contenido-tabla">
         <div className="">
           <div className="gap-4 bg-white">
-            <form className="bg-white w-fulls m-2">
+            <form className="flex justify-center bg-white w-fulls m-2">
 
               {selectedOption === 'reproductor' && <FormAdminVideoVisor />}
               {selectedOption === 'carousel' && <FormCarousel />}

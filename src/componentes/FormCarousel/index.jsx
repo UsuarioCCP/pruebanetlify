@@ -1,8 +1,23 @@
 import { useContext } from 'react';
 import { ImagenesContext } from '../Context/imagenContext';
+import './styles.css'
 
 const FormCarousel = () => {
   const { imagenes, actualizarImagenes } = useContext(ImagenesContext);
+
+  let numColumns = 1;
+  if (imagenes.length >= 2 && imagenes.length <= 5) {
+    numColumns = imagenes.length;
+  } else if (imagenes.length > 5) {
+    numColumns = 6; // Limitar a un máximo de 5 columnas
+  }
+
+  // Crear el estilo para distribuir equitativamente las columnas
+  const gridStyle = {
+    display: 'grid',
+    gap: '1rem', // Espacio entre elementos del grid
+    gridTemplateColumns: `repeat(${numColumns}, 1fr)`, // Distribuir las columnas equitativamente
+  };
 
   const agregarNuevaImagen = (event) => {
     event.preventDefault(); // Prevenir el comportamiento predeterminado de envío del formulario
@@ -33,9 +48,9 @@ const FormCarousel = () => {
     window.alert('¡Cambios guardados exitosamente!'); // Mostrar alerta de éxito
   };
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
+    <div style={gridStyle}>
       {imagenes.map((imagen, index) => (
-        <div key={index} className="relative bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div key={index} className="relative bg-white border-4 border-gray-500 rounded-lg drop-shadow-xl dark:bg-gray-800 dark:border-gray-700">
           <h1 className="text-center text-lg font-bold text-gray-900 dark:text-white">Imagen {index + 1}</h1>
           <button className="absolute top-1 right-1 text-red-600" onClick={() => quitarImagen(index)}>
             X

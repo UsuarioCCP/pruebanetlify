@@ -13,7 +13,6 @@
 }
 .empresa{
 	color: white;
-	background: rgb(238,34,34);
 	background: linear-gradient(0deg, rgba(238,34,34,1) 41%, rgba(200,42,42,1) 64%, rgba(181,88,88,1) 95%);
 	font-family: 'Rokkitt', serif;
 	font-weight: bold;
