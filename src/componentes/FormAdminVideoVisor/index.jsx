@@ -1,8 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const FormAdminVideoVisor = ({ cambioVideoUrl }) => {
   const [newVideoUrl, setNewVideoUrl] = useState("");
-  const [isAdminOpen, setIsAdminOpen] = useState(false); // Variable de estado de ejemplo
 
   const handleChangeVideo = () => {
     // Lógica para cambiar la URL del video
@@ -10,7 +9,7 @@ const FormAdminVideoVisor = ({ cambioVideoUrl }) => {
     cambioVideoUrl(newVideoUrl);
 
     // Cierra el modal después de realizar los cambios
-    setIsAdminOpen(false);
+    // No se utiliza ninguna variable de estado `isAdminOpen` aquí
   };
 
   return (
