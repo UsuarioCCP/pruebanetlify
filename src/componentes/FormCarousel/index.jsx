@@ -24,11 +24,14 @@ const FormCarousel = () => {
     actualizarImagenes(updatedImages);
   };
 
-  const handleSaveChanges = () => {
+  const handleSaveChanges = (event) => {
+    event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
+  
     localStorage.setItem('carouselImages', JSON.stringify(imagenes));
     console.log('Cambios guardados en localStorage:', imagenes);
+  
+    window.alert('¡Cambios guardados exitosamente!'); // Mostrar alerta de éxito
   };
-
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
       {imagenes.map((imagen, index) => (
@@ -84,7 +87,7 @@ const FormCarousel = () => {
 
         {/* Botón para guardar cambios */}
         <div className="col-span-2 mt-1">
-          <button onClick={handleSaveChanges} className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full">Guardar Cambios</button>
+          <button onClick={(e) => handleSaveChanges(e)} className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full">Guardar Cambios</button>
         </div>
       </div>
     </div>
