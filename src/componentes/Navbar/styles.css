@@ -1,7 +1,5 @@
 #contenedor-logos {
 	display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     height: 60px;
     align-items: center;
     align-content: center;

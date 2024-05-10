@@ -5,11 +5,11 @@ import "./styles.css";
 const Navbar = () => {
   return (
     <nav className="dark:bg-gray-900 fixed w-full z-20 top-0 start-0 ">
-      <div className="my-4 mx-10 flex flex-wrap items-center justify-between p-4">
+      <div className="my-4 mx-10 flex items-center justify-evenly p-4">
         <ul className="flex items-center gap-3">
           <li className="font-semibold text-lg">
             <NavLink to="/">
-              <div className="md:w-full gap-3" id="contenedor-logos">
+              <div className="flex flex-nowrap md:w-full gap-3" id="contenedor-logos">
                 <img
                   src="https://i.imgur.com/k9aBoGR.png"
                   id="logo-empresa-ochenta"
