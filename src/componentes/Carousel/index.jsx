@@ -37,7 +37,7 @@ function Carousel() {
           >
             <img src={imagen.url} className="block w-full h-96" id="imagen-carousel" alt={`Slide ${index}`} />
 
-            <div className="p-5">
+            <div className="p-2">
               <div>
                 <h5 className="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">
                   {imagen.titulo}
