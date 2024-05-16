@@ -6,7 +6,7 @@ import Baner from "../../componentes/Baner";
 
 const Home = () => {
 
-    const defaultVideoUrl = "https://www.youtube-nocookie.com/embed/videoseries?si=mYpzQKWNUh341Uel&amp;controls=0&amp;list=PLmVJ0CeRYtBxgD2lU-WayzydmZM_K7JgK";
+    const defaultVideoUrl = "https://www.youtube-nocookie.com/embed/videoseries?si=jxE-IkC1qrs1p0cn&amp;controls=0&loop=1&amp;list=PLmVJ0CeRYtBxgD2lU-WayzydmZM_K7JgK";
 
     const [videoUrl, setVideoUrl] = useState('');
 
