@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { ImagenesContext } from "../Context/imagenContext";
+import { ImagenesContext } from "../Context";
 import "./styles.css";
 
 function Carousel() {

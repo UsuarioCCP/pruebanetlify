@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ImagenesProvider } from './componentes/Context/imagenContext';
+import { ImagenesProvider } from './componentes/Context';
 import Home from './pages/home';
 import Admin from './pages/Admin';
 import Navbar from './componentes/Navbar';

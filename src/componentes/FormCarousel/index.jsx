@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { ImagenesContext } from '../Context/imagenContext';
+import { ImagenesContext } from '../Context';
 import './styles.css'
 
 const FormCarousel = () => {
