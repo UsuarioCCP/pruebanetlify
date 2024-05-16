@@ -1,7 +1,7 @@
 #carouselExampleCaptions{
-  background: #9998985f;
   backdrop-filter: blur(5px);
+  background: #ffffff5f;
+  border: 8px solid #74717175;
   border-radius: 1px;
-  border: 8px solid #fcfcfc6f;
   width: 80%;
 }
