@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './styles.css';
 import FormAdminVideoVisor from '../FormAdminVideoVisor';
 import FormCarousel from '../FormCarousel';
+import FormBaner from '../FormBaner';
 
 const Form = () => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -65,6 +66,11 @@ const Form = () => {
                 <span className="flex-1 ms-3 whitespace-nowrap">Carousel</span>
               </button>
             </li>
+            <li>
+              <button onClick={() => handleOptionClick('baner', 'baner')} className={buttonClass('baner')}>
+                <span className="flex-1 ms-3 whitespace-nowrap">Baner</span>
+              </button>
+            </li>
             {/* Aquí pueden añadirse más opciones de la barra lateral */}
           </ul>
         </div>
@@ -73,11 +79,11 @@ const Form = () => {
       <div className="container h-[39rem] fixed top-28 overflow-x-auto bg-white border-8 border-red-700 border-solid rounded-lg dark:border-gray-700" id="contenido-tabla">
         <div className="">
           <div className="gap-4 bg-white">
-            <form className="flex justify-center bg-white w-fulls m-2">
+            <form className="justify-center bg-white w-full m-2">
 
               {selectedOption === 'reproductor' && <FormAdminVideoVisor />}
               {selectedOption === 'carousel' && <FormCarousel />}
-              {/* Aquí pueden agregarse más componentes según las opciones */}
+              {selectedOption === 'baner' && <FormBaner /> }
 
               {/* Mostrar mensaje inicial si no se ha hecho clic en ninguna opción */}
               {!primerClic && selectedOption === null && (

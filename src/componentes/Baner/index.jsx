@@ -81,7 +81,7 @@ function Baner() {
   const mensajeElementRef = useRef(null);
 
   useEffect(() => {
-    const messages = [
+    const defaultMessages = [
       "Agendate con la Cámara de Comercio y consulta los beneficios de estar formalizado en www.camarapamplona.org.co",
       "Recuerda nuestro horario de atención     Lunes a Viernes    de 8:00am - 12:00pm    y    de 2:00pm - 6:00pm",
       "Nuestros asesores estan aquí para brindarte la información que necesitas",
@@ -95,6 +95,8 @@ function Baner() {
       "Si tienes actividades de alto impacto, debes gestionar los permisos necesarios ante las autoridades locales (Planeación municipal, sayco y acinpro, bomberos, entre otros).",
       "Recuerda que puedes realizar tu matrícula mercantil mediante la Ventanilla Unica Empresarial VUE, aplica solo para Pamplona."
     ];
+
+    const messages = JSON.parse(localStorage.getItem('messages')) || defaultMessages;
 
     const mensajeElement = mensajeElementRef.current;
     if (!mensajeElement) return;
