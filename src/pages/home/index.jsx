@@ -6,7 +6,10 @@ import Baner from "../../componentes/Baner";
 
 const Home = () => {
 
-    const defaultVideoUrl = "https://www.youtube-nocookie.com/embed/videoseries?si=ddWJhBvp8hQR88nB&amp;controls=0&loop=1&amp;list=PLaZmxwblqOt6M6hgw8u3-h05kt31s5bYM";
+    const defaultVideoUrl = "https://www.youtube-nocookie.com/embed/m_kJMYQrqj8?si=HULXHksd1cui3Un4&amp;controls=0";
+    
+    // videos camara de comercio
+    // "https://www.youtube-nocookie.com/embed/videoseries?si=ddWJhBvp8hQR88nB&amp;controls=0&loop=1&amp;list=PLaZmxwblqOt6M6hgw8u3-h05kt31s5bYM";
     
 
     const [videoUrl, setVideoUrl] = useState('');
