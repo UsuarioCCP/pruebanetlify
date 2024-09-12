@@ -20,7 +20,7 @@ function Carousel() {
   return (
     <div
       id="carouselExampleCaptions"
-      className="absolute max-w-sm h-[33rem] shadow dark:bg-gray-800 dark:border-gray-700"
+      className="absolute max-w-sm h-auto max-h-[34rem] shadow dark:bg-gray-800 dark:border-gray-700"
       data-te-carousel-init
       data-te-ride="carousel"
     >
@@ -37,13 +37,13 @@ function Carousel() {
           >
             <img src={imagen.url} className="block w-full h-96" id="imagen-carousel" alt={`Slide ${index}`} />
 
-            <div className="p-2">
+            <div className="p-2 h-auto">
               <div>
                 <h5 className="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">
                   {imagen.titulo}
                 </h5>
               </div>
-              <p className="mb-3 text-center font-medium text-black dark:text-gray-400">
+              <p className="mb-3 h-auto text-center font-medium text-black dark:text-gray-400">
                 {imagen.descripcion}
               </p>
             </div>

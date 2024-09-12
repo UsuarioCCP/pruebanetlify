@@ -21,7 +21,7 @@ function VideoVisor({ videoUrl }) {
   }, [videoUrl]);
 
   return (
-    <div className="w-full" id="visor">
+    <div className="relative w-full h-60 md:h-96 lg:h-[35rem] m-2 lg:m-16" id="visor">
       <iframe
         id="videoPlayer"
         className="relative h-full w-full"

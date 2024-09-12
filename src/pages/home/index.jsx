@@ -22,7 +22,7 @@ const Home = () => {
 
     return (
         <Layout>
-            <div className="max-h-full grid grid-cols-3" style={{ height: '100vh' }}>
+            <div className="max-h-full grid md:grid-cols-3" style={{ height: '100vh' }}>
                 <div className="col-span-3 lg:col-span-2 flex items-center justify-center flex-wrap">
                     <VideoVisor videoUrl={videoUrl} />
                 </div>
