@@ -26,7 +26,7 @@ const Home = () => {
                 <div className="col-span-3 lg:col-span-2 flex items-center justify-center flex-wrap">
                     <VideoVisor videoUrl={videoUrl} />
                 </div>
-                <div className="col-span-3 lg:col-span-1 carousel flex justify-center items-center">
+                <div className="col-span-3 lg:col-span-1 carousel flex justify-center items-end">
                     <Carousel />
                 </div>
             </div>
