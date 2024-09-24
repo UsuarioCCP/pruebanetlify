@@ -4,7 +4,7 @@ import "./styles.css";
 
 const Navbar = () => {
   return (
-    <nav className="absolute dark:bg-gray-900 w-full z-20 top-0 start-0 ">
+    <nav className="dark:bg-gray-900 w-full z-20 top-0 start-0 ">
       <div className="my-4 mx-10 flex items-center justify-evenly p-4">
         <ul className="flex items-center gap-3">
           <li className="font-semibold text-lg">
@@ -30,7 +30,7 @@ const Navbar = () => {
               <li className="list-none">
                 <NavLink to='/admin'>
                 <div className="w-full" id="contenedor-nombre">
-                  <h2 className="text-xl font-semibold text-center md:text-4xl empresa">
+                  <h2 className="text-xl font-semibold text-center p-4 md:text-5xl empresa">
                     Cámara de Comercio de Pamplona
                   </h2>
                 </div>
