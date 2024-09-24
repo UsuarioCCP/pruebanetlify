@@ -30,7 +30,7 @@ const Navbar = () => {
               <li className="list-none">
                 <NavLink to='/admin'>
                 <div className="w-full" id="contenedor-nombre">
-                  <h2 className="text-xl font-semibold px-1 py-1 text-center md:text-4xl empresa">
+                  <h2 className="text-xl font-semibold px-4 py-2 text-center md:text-4xl empresa">
                     Cámara de Comercio de Pamplona
                   </h2>
                 </div>

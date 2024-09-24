@@ -20,7 +20,7 @@ function Carousel() {
   return (
     <div
       id="carouselExampleCaptions"
-      className="absolute max-w-sm h-auto max-h-[32rem] shadow dark:bg-gray-800 dark:border-gray-700"
+      className="relative max-w-sm h-auto max-h-[32rem] shadow dark:bg-gray-800 dark:border-gray-700"
       data-te-carousel-init
       data-te-ride="carousel"
     >
