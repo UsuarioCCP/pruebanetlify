@@ -1,6 +1,6 @@
 // Snowfall.js
-import React, { useEffect, useState } from 'react';
-import './Snowfall.css';
+import React, { useEffect, useState } from "react";
+import "./Snowfall.css";
 
 const Snowfall = ({ snowflakeCount = 50, fallSpeed = 3 }) => {
   const [flakes, setFlakes] = useState([]);
@@ -8,31 +8,26 @@ const Snowfall = ({ snowflakeCount = 50, fallSpeed = 3 }) => {
   // Función para seleccionar un tamaño aleatorio (grande, mediano, pequeño)
   const getRandomSize = () => {
     const sizes = [
-      `${Math.random() * 0.5 + 0.5}rem`, // Pequeño (1-2 rem)
-      `${Math.random() * 0.5 + 1.5}rem`, // Mediano (2-4 rem)
-      `${Math.random() * 1 + 2}rem`, // Grande (4-5 rem)
+      `${Math.random() * 0.5 + 0.5}rem`, // Pequeño (0.5-1 rem)
+      `${Math.random() * 0.5 + 1.5}rem`, // Mediano (1.5-2 rem)
+      `${Math.random() * 1 + 2}rem`,     // Grande (2-3 rem)
     ];
     return sizes[Math.floor(Math.random() * sizes.length)];
   };
 
-  // Función para seleccionar un filtro de color navideño aleatoriamente
-  const getRandomFilter = () => {
-    const filters = [
-      'hue-rotate(200deg) saturate(100) brightness(0.8)',  // Rojo
-       // Verde
-      'hue-rotate(230deg) saturate(150) brightness(1)',  // Amarillo
-      'saturate(0) brightness(2.2)',                                 // Blanco
-    ];
-    return filters[Math.floor(Math.random() * filters.length)];
+  // Función para seleccionar una clase de color aleatoria
+  const getRandomColorClass = () => {
+    const colors = ["red-snowflake", "green-snowflake", "yellow-snowflake", "white-snowflake"];
+    return colors[Math.floor(Math.random() * colors.length)];
   };
 
   useEffect(() => {
     // Generar copos de nieve con posiciones, velocidades, tamaños y colores aleatorios
     const newFlakes = Array.from({ length: snowflakeCount }).map(() => ({
-      left: Math.random() * 250, // Posición inicial horizontal aleatoria
+      left: Math.random() * 200, // Posición inicial horizontal aleatoria
       animationDuration: `${Math.random() * (fallSpeed + 2) + fallSpeed}s`,
-      size: getRandomSize(), // Tamaño aleatorio
-      filter: getRandomFilter(), // Asignar un filtro de color aleatorio
+      size: getRandomSize(),     // Tamaño aleatorio
+      colorClass: getRandomColorClass(), // Clase de color aleatoria
     }));
     setFlakes(newFlakes);
   }, [snowflakeCount, fallSpeed]);
@@ -46,15 +41,20 @@ const Snowfall = ({ snowflakeCount = 50, fallSpeed = 3 }) => {
           style={{
             left: `${flake.left}%`,
             animationDuration: flake.animationDuration,
-            fontSize: flake.size, // Aplicar tamaño aleatorio
-            filter: flake.filter, // Aplicar el filtro de color
           }}
         >
-          ❄️
+          <span
+            className={`material-symbols-outlined ${flake.colorClass}`}
+            style={{
+              fontSize: flake.size, // Aplicar tamaño directamente al span
+            }}
+          >
+            ac_unit
+          </span>
         </div>
       ))}
     </div>
   );
 };
 
-export {Snowfall};
+export { Snowfall };
