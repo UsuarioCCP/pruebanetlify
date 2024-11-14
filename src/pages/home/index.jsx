@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Layout from "../../componentes/Layout"
+
 import VideoVisor from "../../componentes/VideoVisor"
 import Carousel from "../../componentes/Carousel";
 import Baner from "../../componentes/Baner";

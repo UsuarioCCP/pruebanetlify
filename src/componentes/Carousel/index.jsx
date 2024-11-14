@@ -35,7 +35,7 @@ function Carousel() {
             id="slide-carousel"
             style={{ display: index === activeIndex ? "block" : "none" }}
           >
-            <img src={imagen.url} className="block w-full h-auto" id="imagen-carousel" alt={`Slide ${index}`} />
+            <img src={imagen.url} className="block w-full h-[22rem] object-contain" id="imagen-carousel" alt={`Slide ${index}`} />
 
             <div className="p-2 h-auto">
               <div>
