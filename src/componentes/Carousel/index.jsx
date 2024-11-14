@@ -20,7 +20,7 @@ function Carousel() {
   return (
     <div
       id="carouselExampleCaptions"
-      className="relative max-w-sm h-auto max-h-[32rem] shadow dark:bg-gray-800 dark:border-gray-700"
+      className="relative max-w-xs h-auto max-h-[32rem] shadow dark:bg-gray-800 dark:border-gray-700"
       data-te-carousel-init
       data-te-ride="carousel"
     >
@@ -35,7 +35,12 @@ function Carousel() {
             id="slide-carousel"
             style={{ display: index === activeIndex ? "block" : "none" }}
           >
-            <img src={imagen.url} className="block w-full h-[22rem] object-contain" id="imagen-carousel" alt={`Slide ${index}`} />
+            <img
+              src={imagen.url}
+              className="block w-full h-auto max-h-[22rem] object-contain"
+              id="imagen-carousel"
+              alt={`Slide ${index}`}
+            />
 
             <div className="p-2 h-auto">
               <div>
@@ -55,4 +60,3 @@ function Carousel() {
 }
 
 export default Carousel;
-
