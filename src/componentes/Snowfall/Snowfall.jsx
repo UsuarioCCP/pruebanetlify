@@ -29,7 +29,7 @@ const Snowfall = ({ snowflakeCount = 50, fallSpeed = 3 }) => {
   useEffect(() => {
     // Generar copos de nieve con posiciones, velocidades, tamaños y colores aleatorios
     const newFlakes = Array.from({ length: snowflakeCount }).map(() => ({
-      left: Math.random() * 200, // Posición inicial horizontal aleatoria
+      left: Math.random() * 250, // Posición inicial horizontal aleatoria
       animationDuration: `${Math.random() * (fallSpeed + 2) + fallSpeed}s`,
       size: getRandomSize(), // Tamaño aleatorio
       filter: getRandomFilter(), // Asignar un filtro de color aleatorio
