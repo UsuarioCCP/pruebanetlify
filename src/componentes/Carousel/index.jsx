@@ -11,7 +11,7 @@ function Carousel() {
     if (imagenes.length > 0) {
       const interval = setInterval(() => {
         setActiveIndex((prevIndex) => (prevIndex + 1) % imagenes.length);
-      }, 10000);
+      }, 20000);
 
       return () => clearInterval(interval);
     }
@@ -28,31 +28,30 @@ function Carousel() {
         {/* Mostrar las imágenes desde el contexto */}
         {imagenes.map((imagen, index) => (
           <div
-            key={index}
-            className={`relative float-left w-full transition-transform duration-600ms ease-in-out motion-reduce:transition-none`}
-            data-te-carousel-active
-            data-te-carousel-item
-            id="slide-carousel"
-            style={{ display: index === activeIndex ? "block" : "none" }}
-          >
-            <img
-              src={imagen.url}
-              className="block w-full h-auto max-h-[22rem] object-contain"
-              id="imagen-carousel"
-              alt={`Slide ${index}`}
-            />
-
-            <div className="p-2 h-auto">
-              <div>
-                <h5 className="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">
-                  {imagen.titulo}
-                </h5>
-              </div>
-              <p className="mb-3 h-auto text-center font-medium text-black dark:text-gray-400">
-                {imagen.descripcion}
-              </p>
+          key={index}
+          className={`relative float-left w-full h-[32rem] transition-transform duration-600ms ease-in-out motion-reduce:transition-none flex flex-col justify-between`}
+          data-te-carousel-active
+          data-te-carousel-item
+          id="slide-carousel"
+          style={{ display: index === activeIndex ? "block" : "none" }}
+        >
+          <img
+            src={imagen.url}
+            className="w-full h-auto max-h-[22rem] object-contain"
+            id="imagen-carousel"
+            alt={`Slide ${index}`}
+          />
+          <div className="p-2 h-1/3 flex flex-col justify-center">
+            <div className="flex-grow-[0.3]">
+              <h5 className="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">
+                {imagen.titulo}
+              </h5>
             </div>
+            <p className="mb-3 text-center font-medium text-black dark:text-gray-400 line-clamp-3">
+              {imagen.descripcion}
+            </p>
           </div>
+        </div>
         ))}
       </div>
     </div>
