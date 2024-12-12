@@ -47,7 +47,7 @@ function FormBaner() {
   };
 
   return (
-    <div className="p-4 bg-gray-100 rounded-lg">
+    <div className="px-10 bg-gray-100 rounded-lg">
       {messages.map((message, index) => (
         <div key={index} className="flex flex-col mb-4">
           <div className="flex justify-between">
@@ -63,7 +63,7 @@ function FormBaner() {
             onChange={(e) => handleChange(index, e)}
             rows="2"
             className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            style={{ width: '100%' }}
+            style={{ width: 'auto' }}
           />
         </div>
       ))}
