@@ -44,7 +44,7 @@ export const ImagenesProvider = ({ children }) => {
     {
       titulo: "Categoría Mejor Empresa Innovadora",
       descripcion:
-        "Escuela de Transformación interior GELVA SAS de Rosangela Casto Salazar",
+        "Escuela de Transformación interior GELVA SAS de Rosangela Castro Salazar",
       url: "https://i.postimg.cc/7hK9SFGV/gelva.webp",
     },
     {
