@@ -1,10 +1,10 @@
 import './styles.css'
-import { Snowfall } from '../Snowfall/Snowfall';
+// import { Snowfall } from '../Snowfall/Snowfall';
 
 const Layout = ({ children }) => {
     return(
         <div className="flex flex-col">
-            <Snowfall snowflakeCount={200} fallSpeed={20}/>
+            {/* <Snowfall snowflakeCount={200} fallSpeed={20}/> */}
             { children }
         </div>
     )
