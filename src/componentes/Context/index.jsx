@@ -13,6 +13,11 @@ export const ImagenesProvider = ({ children }) => {
       descripcion: "Haz tu vida más fácil y regístrate en El Guro Emprendedor, el portal gratuito para emprendedores y microempresarios." 
     },
     { 
+      url: "https://i.postimg.cc/gjk3ZDgL/Whats-App-Image-2025-01-15-at-2-34-06-PM.jpg", 
+      titulo: "Empieza con toda el 2025", 
+      descripcion: "Conoce los programas y servcios camerales con los que apoyamos a los empresarios para que sus negocios crezcan" 
+    },
+    { 
       url: "https://i.postimg.cc/0yQdb0tw/Whats-App-Image-2024-11-14-at-2-12-10-PM.jpg", 
       titulo: "Tenga en cuenta", 
       descripcion: "🚔👮‍♂️ El Gaula de la Policía te recuerda: ¡Cuelga y bloquea! No caigas en extorsión ⚠️. Reporta al ☎️ 165 gratis. ¡Protege tu seguridad del 👤🕵️!" 
@@ -23,9 +28,9 @@ export const ImagenesProvider = ({ children }) => {
       descripcion: "Conoce el nuevo canal de difusión que tenemos con toda la actualidad de la Camara de Comercio de Pamplona" 
     },
     {
+      url: "https://i.postimg.cc/150ZtrLr/473428151-624428056625843-1483357311328560928-n.jpg",
       titulo: "#JuntosProgresamosMás",
       descripcion: "Renueva tu Registro Mercantil y empieza con toda el 2025",
-      url: "https://i.postimg.cc/150ZtrLr/473428151-624428056625843-1483357311328560928-n.jpg",
     },
   ]);
 
