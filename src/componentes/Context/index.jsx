@@ -24,35 +24,34 @@ export const ImagenesProvider = ({ children }) => {
       descripcion: "Conoce el nuevo canal de difusión que tenemos con toda la actualidad de la Camara de Comercio de Pamplona" 
     },
     {
-      titulo: "Categoría Compromiso Social y Sostenibilidad",
-      descripcion:
-        "Anudando con PAO, de Angelica Paola Delgado Arenas y Agropecuaria Latorre SAS, de Carlos Andres Latorre Araque",
-      url: "https://i.postimg.cc/ryjf6rnr/latorre.webp",
+      titulo: "#JuntosProgresamosMás",
+      descripcion: "Renueva tu Registro Mercantil y empieza con toda el 2025",
+      url: "https://i.postimg.cc/150ZtrLr/473428151-624428056625843-1483357311328560928-n.jpg",
     },
-    {
-      titulo: "Categoría Empresa de Mayor Crecimiento Empresarial",
-      descripcion:
-        "Ips Codigo Azul Medicina en su Hogar, de Nancy Hernandez Sanabria",
-      url: "https://i.postimg.cc/rsVg0Vms/codigo-azul.webp",
-    },
-    {
-      titulo: "Categoria Mejor Proyecto Emprendedor",
-      descripcion:
-        "Endulzate: Postres y Gelatina de Mildred Carolina Villamizar Suarez",
-      url: "https://i.postimg.cc/1tcJ3nyb/endulzate.webp",
-    },
-    {
-      titulo: "Categoría Mejor Empresa Innovadora",
-      descripcion:
-        "Escuela de Transformación interior GELVA SAS de Rosangela Castro Salazar",
-      url: "https://i.postimg.cc/7hK9SFGV/gelva.webp",
-    },
-    {
-      titulo: "Promoción del Comercio Local",
-      descripcion:
-        "DECOARTE RICORDIS de Jose Ricardo Parada Delgado",
-      url: "https://i.postimg.cc/xTFg8SSj/ricordis.webp",
-    },
+    // {
+    //   titulo: "Categoría Empresa de Mayor Crecimiento Empresarial",
+    //   descripcion:
+    //     "Ips Codigo Azul Medicina en su Hogar, de Nancy Hernandez Sanabria",
+    //   url: "https://i.postimg.cc/rsVg0Vms/codigo-azul.webp",
+    // },
+    // {
+    //   titulo: "Categoria Mejor Proyecto Emprendedor",
+    //   descripcion:
+    //     "Endulzate: Postres y Gelatina de Mildred Carolina Villamizar Suarez",
+    //   url: "https://i.postimg.cc/1tcJ3nyb/endulzate.webp",
+    // },
+    // {
+    //   titulo: "Categoría Mejor Empresa Innovadora",
+    //   descripcion:
+    //     "Escuela de Transformación interior GELVA SAS de Rosangela Castro Salazar",
+    //   url: "https://i.postimg.cc/7hK9SFGV/gelva.webp",
+    // },
+    // {
+    //   titulo: "Promoción del Comercio Local",
+    //   descripcion:
+    //     "DECOARTE RICORDIS de Jose Ricardo Parada Delgado",
+    //   url: "https://i.postimg.cc/xTFg8SSj/ricordis.webp",
+    // },
   ]);
 
   // Cargar imágenes desde localStorage al iniciar
